@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "7218013810:AAH0xI-NRoEgbXW9Y74z1AhaEkgouJe
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/bde2e16dd378cfba1ab51.jpg')).split()
 
 
 # Admins & Users
@@ -59,27 +59,27 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
+MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pebef88860:pebef88860@cluster0.uens2hb.mongodb.net/?retryWrites=true&w=majority")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
-O_DB_URI = environ.get('O_DB_URI', "")   # This Db Is For Other Data Store
-F_DB_URI = environ.get('F_DB_URI', "")   # This Db Is For File Data Store
-S_DB_URI = environ.get('S_DB_URI', "")   # This Db is for File Data Store When First Db Is Going To Be Full.
+O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://Autodb01:Autodb01@autodb01.iirm4.mongodb.net/?retryWrites=true&w=majority&appName=Autodb01")   # This Db Is For Other Data Store
+F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://Autodb02:Autodb02@autodb02.xpctg.mongodb.net/?retryWrites=true&w=majority&appName=Autodb02")   # This Db Is For File Data Store
+S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://Autodb03:Autodb03@autodb03.rw0iv.mongodb.net/?retryWrites=true&w=majority&appName=Autodb03")   # This Db is for File Data Store When First Db Is Going To Be Full.
 
 
 # Premium And Referal Settings
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/55749b0d3eaee3a5b958b.jpgg')
 PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- 30ʀs - 1 ᴡᴇᴇᴋ\n- 50ʀs - 1 ᴍᴏɴᴛʜs\n- 120ʀs - 3 ᴍᴏɴᴛʜs\n- 220ʀs - 6 ᴍᴏɴᴛʜs\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>jivshn@okaxis</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ</b>')
-OWNER_USERNAME = environ.get('OWNER_USERNAME', 'kingvj01') # owner username without @
+OWNER_USERNAME = environ.get('OWNER_USERNAME', 'tellyhubsupports') # owner username without @
 
 
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.

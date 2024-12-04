@@ -84,6 +84,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'PUBLICITSOKFILE') # Pu
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Movies_Premium_Tellyhub')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/tellycloud_bots')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/tellyHUBSupports')
+SUPPORT_LNK = environ.get('OWNER_LNK', 'https://t.me/Movies_Premium_Tellyhub')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'tellycloud') # Support Chat Link Without https:// or @
 
 

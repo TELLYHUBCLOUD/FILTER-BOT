@@ -84,7 +84,9 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'PUBLICITSOKFILE') # Pu
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Movies_Premium_Tellyhub')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/tellycloud_bots')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/tellyHUBSupports')
-SUPPORT_LNK = environ.get('OWNER_LNK', 'https://t.me/Movies_Premium_Tellyhub')
+SUPPORT_LNK = environ.get('SUPPORT_LNK', 'https://t.me/Movies_Premium_Tellyhub')
+SUPPORT_GRP = environ.get('SUPPORT_GRP', 'https://t.me/tellycloud')
+PERPRIX_CAPTION = environ.get('PERPRIX_CAPTION', '@TellYCloud_Bots')  #line 645 655  commands.py, 499  523 533 approve.py, 101  commands.py
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'tellycloud') # Support Chat Link Without https:// or @
 
 

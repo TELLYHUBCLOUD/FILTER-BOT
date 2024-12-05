@@ -8,7 +8,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '23241238'))
 API_HASH = environ.get('API_HASH', 'e6ff6e3068dbea75500865ac49c3608f')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7218013810:AAH0xI-NRoEgbXW9Y74z1AhaEkgouJeO8Co")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -159,7 +159,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://web-qcqz40mgd2lq.up-de-fra1-k8s-1.apps.run-on-seenode.com/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not

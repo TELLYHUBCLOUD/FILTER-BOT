@@ -56,7 +56,8 @@ async def auto_approve(client, message: ChatJoinRequest):
                         InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                     ],[
                         InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                        InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                        InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
+                        InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat='')
                     ],[
                         InlineKeyboardButton('🔻 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🔻', callback_data='subscription')
                     ],[
@@ -70,7 +71,8 @@ async def auto_approve(client, message: ChatJoinRequest):
                         InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                     ],[
                         InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                        InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                        InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
+                        InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat='')
                     ],[
                         InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                     ]]
@@ -377,7 +379,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                 file_id = file["file_id"]
                 files_ = await get_file_details(file_id)
                 files1 = files_
-                title = ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1["file_name"].split()))
+                title = '@TellYCloud_bots ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1["file_name"].split()))
                 size=get_size(files1["file_size"])
                 f_caption=files1["caption"]
                 if CUSTOM_FILE_CAPTION:
@@ -387,7 +389,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                         logger.exception(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"{' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1['file_name'].split()))}"
+                    f_caption = f"@TellYCloud_bots {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1['file_name'].split()))}"
                 if not await db.has_premium_access(message.from_user.id):
                     if not await check_verification(client, message.from_user.id) and VERIFY == True:
                         btn = [[
@@ -496,7 +498,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                 )
                 filetype = msg.media
                 file = getattr(msg, filetype.value)
-                title = '{PERPRIX_CAPTION} ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+                title = '@TellYCloud_bots ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
                 size=get_size(file.file_size)
                 f_caption = f"<code>{title}</code>"
                 if CUSTOM_FILE_CAPTION:
@@ -520,7 +522,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                 pass
             return await client.send_message(message.from_user.id, '**No such file exist.**')
         files = files_
-        title = '{PERPRIX_CAPTION}  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files["file_name"].split()))
+        title = '@TellYCloud_bots  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files["file_name"].split()))
         size=get_size(files["file_size"])
         f_caption=files["caption"]
         if CUSTOM_FILE_CAPTION:
@@ -530,7 +532,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                 logger.exception(e)
                 f_caption=f_caption
         if f_caption is None:
-            f_caption = f"{PERPRIX_CAPTION}  {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files['file_name'].split()))}"
+            f_caption = f"@TellYCloud_bots  {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files['file_name'].split()))}"
         if not await db.has_premium_access(message.from_user.id):
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 btn = [[

@@ -42,4 +42,3 @@ dnspython==2.3.0
 ffmpeg-python>=0.2.0
 openai==0.25.0
 git+https://github.com/Joelkb/cinemagoer
-https://github.com/Mahesh0253/pyrogram/archive/inline.zip

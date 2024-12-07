@@ -56,10 +56,10 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Autodb02:Autodb02@autodb02.xpctg.mongodb.net/?retryWrites=true&w=majority&appName=Autodb02")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Autodb02:Autodb02@autodb02.xpctg.mongodb.net/?retryWrites=true&w=majority")   # IF Multiple Database Is False Then Fill Only This Database Url.
 F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://pebef88860:pebef88860@cluster0.uens2hb.mongodb.net/?retryWrites=true&w=majorit")   # This Db Is For File Data Store
-S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://Autodb03:Autodb03@autodb03.rw0iv.mongodb.net/?retryWrites=true&w=majority&appName=Autodb03")   # This Db is for File Data Store When First Db Is Going To Be Full.
-O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://Autodb01:Autodb01@autodb01.iirm4.mongodb.net/?retryWrites=true&w=majority&appName=Autodb01")   # This Db Is For Other Data Store
+S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://Autodb03:Autodb03@autodb03.rw0iv.mongodb.net/?retryWrites=true&w=majority")   # This Db is for File Data Store When First Db Is Going To Be Full.
+O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://Autodb01:Autodb01@autodb01.iirm4.mongodb.net/?retryWrites=true&w=majority")   # This Db Is For Other Data Store
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -76,7 +76,7 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'tellyhubsupports') # owner usern
 
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
 CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
-CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "mongodb+srv://Autodb01:Autodb01@autodb01.iirm4.mongodb.net/?retryWrites=true&w=majority&appName=Autodb01") # Necessary If clone mode is true
+CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "mongodb+srv://Autodb01:Autodb01@autodb01.iirm4.mongodb.net/?retryWrites=true&w=majority") # Necessary If clone mode is true
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'PUBLICITSOKFILE') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 

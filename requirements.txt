@@ -25,7 +25,8 @@ python-decouple
 ffmpeg
 youtube_search
 pymongo[srv]==3.12.3 
-motor==2.5.1 
+motor==2.5.1
+pyenv==3.11.6
 marshmallow==3.14.1 
 umongo==3.0.1 
 PyLeaves==1.0.2

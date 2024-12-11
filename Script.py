@@ -151,25 +151,25 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 ★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
 ★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code></b>"""
     
-    STATUS_TXT = """<b><blockquote>Total Files From All DBs: <code>{}</blockquote></code>
+    STATUS_TXT = """<b><blockquote>📂 Tᴏᴛᴀʟ Fɪʟᴇs : <code>{}</blockquote></code>
 
-USERS DB :-
-★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
-★ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
+<blockquote>USERS DB </blockquote>
+╭ ▸  Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
+╰ ▸  Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
 
-FILE FIRST DB :-
-★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
-★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
-★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
+<blockquote>🗃 Dᴀᴛᴀʙᴀsᴇ 1️⃣</blockquote>
+╭ ▸  Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
+├ ▸ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
+╰ ▸  Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
 
-FILE SECOND DB :-
-★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
-★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
-★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
+<blockquote>🗃 Dᴀᴛᴀʙᴀsᴇ 2️⃣</blockquote>
+╭ ▸  Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
+├ ▸ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
+╰ ▸  Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
 
-OTHER DB :-
-★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
-★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code></b>"""
+<blockquote>CLONE DB </blockquote>
+╭ ▸  Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code>
+╰ ▸  Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{} MB</code></b>"""
     
     LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)

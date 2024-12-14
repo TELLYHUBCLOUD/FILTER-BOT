@@ -56,7 +56,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Autodb02:Autodb02@autodb02.xpctg.mongodb.net/?retryWrites=true&w=majority")   # IF Multiple Database Is False Then Fill Only This Database Url.
+# DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Autodb02:Autodb02@autodb02.xpctg.mongodb.net/?retryWrites=true&w=majority")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pebef88860:pebef88860@cluster0.uens2hb.mongodb.net/?retryWrites=true&w=majorit")   # IF Multiple 
 F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://pebef88860:pebef88860@cluster0.uens2hb.mongodb.net/?retryWrites=true&w=majorit")   # This Db Is For File Data Store
 S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://Autodb03:Autodb03@autodb03.rw0iv.mongodb.net/?retryWrites=true&w=majority")   # This Db is for File Data Store When First Db Is Going To Be Full.
 O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://Autodb01:Autodb01@autodb01.iirm4.mongodb.net/?retryWrites=true&w=majority")   # This Db Is For Other Data Store
